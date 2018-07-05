@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Group-Id: io.jenkins.plugins
+Short-Name: latest-cft-demo
+Long-Name: TODO Plugin
+Plugin-Version: 1.0-SNAPSHOT (private-07/03/2018 16:34-ShantanuGupta)
+Hudson-Version: 2.7.3
+Jenkins-Version: 2.7.3
+Plugin-Dependencies: structs:1.7
+Plugin-Developers: 
+Support-Dynamic-Loading: true
+Libraries: /Users/ShantanuGupta/Downloads/tomcat-new/webapps/plugins/l
+ atest-cft-demo/src/main/resources,/Users/ShantanuGupta/Downloads/tomc
+ at-new/webapps/plugins/latest-cft-demo/target/classes
+Resource-Path: /Users/ShantanuGupta/Downloads/tomcat-new/webapps/plugi
+ ns/latest-cft-demo/src/main/webapp
+

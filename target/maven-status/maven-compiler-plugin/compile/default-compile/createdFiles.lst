@@ -1,0 +1,5 @@
+io/jenkins/plugins/sample/HelloWorldBuilder.stapler
+META-INF/annotations/org.kohsuke.accmod.Restricted
+io/jenkins/plugins/sample/HelloWorldBuilder/DescriptorImpl/doCheckName.stapler
+META-INF/annotations/org.jenkinsci.Symbol
+META-INF/annotations/hudson.Extension

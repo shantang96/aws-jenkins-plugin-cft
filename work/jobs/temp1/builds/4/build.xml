@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>1</queueId>
+  <timestamp>1530654490068</timestamp>
+  <startTime>1530654490074</startTime>
+  <result>SUCCESS</result>
+  <duration>105</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/Users/ShantanuGupta/Downloads/tomcat-new/webapps/plugins/latest-cft-demo/work/jobs/temp1/workspace</workspace>
+  <hudsonVersion>2.7.3</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>
