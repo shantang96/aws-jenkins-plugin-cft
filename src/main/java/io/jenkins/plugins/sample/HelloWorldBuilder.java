@@ -96,12 +96,16 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
 			listener.getLogger().println("Executing Command  = " + executeStrX);
 
     		try {
-    			ProcessBuilder pb = new ProcessBuilder(executeStr);
+    			ProcessBuilder pb = new ProcessBuilder(executeStrX);
     			String output = IOUtils.toString(pb.start().getInputStream());
     			listener.getLogger().println(output);
 
     		} catch (IOException e) {
     			e.printStackTrace();
+				listener.getLogger().println("");
+    			listener.getLogger().println("FAILED TO DEPLOY CLOUD FORMATION TEMPLATE. Check command line output for info.");
+    			listener.getLogger().println("To debug run the following command on your command line.");
+    			listener.getLogger().println(executeStrX);
     		}
         }
     }
