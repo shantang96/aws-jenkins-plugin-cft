@@ -1,147 +1,485 @@
 === Starting testBuild(io.jenkins.plugins.sample.HelloWorldBuilderTest)
-   0.019 [id=66]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:52970/jenkins/
-   0.040 [id=72]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
-   0.042 [id=72]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
-   0.179 [id=77]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
-   0.180 [id=79]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
-   0.180 [id=79]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
-   0.326 [id=79]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
-   0.345 [id=79]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 52971
-   0.345 [id=73]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
-   0.513 [id=81]	INFO	hudson.model.Run#execute: test0 #1 main build action completed: SUCCESS
-   0.561 [id=66]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
-   0.564 [id=66]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
-   0.565 [id=66]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
-   0.566 [id=66]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
-   0.569 [id=102]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #2 from /192.168.11.216:52973
-   0.571 [id=66]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
-   0.571 [id=66]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
-   0.573 [id=66]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
-   0.573 [id=66]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+   0.043 [id=66]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:49632/jenkins/
+   0.060 [id=72]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.062 [id=77]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.398 [id=75]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.399 [id=79]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.400 [id=73]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   1.329 [id=78]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   1.349 [id=78]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 49697
+   1.349 [id=74]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   1.405 [id=66]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   1.409 [id=66]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   1.410 [id=66]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   1.411 [id=66]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   1.417 [id=99]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #2 from /192.168.11.216:49763
+   1.418 [id=66]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   1.419 [id=66]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   1.421 [id=66]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   1.421 [id=66]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
 === Starting testConfigRoundtrip(io.jenkins.plugins.sample.HelloWorldBuilderTest)
-   0.016 [id=103]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:52974/jenkins/
-   0.029 [id=109]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
-   0.030 [id=109]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
-   0.144 [id=115]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
-   0.145 [id=115]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
-   0.146 [id=109]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
-   0.148 [id=112]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
-   0.326 [id=116]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 53039
-   0.327 [id=114]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
-   4.544 [id=103]	WARNING	c.g.h.j.host.css.CSSStyleSheet#isValidSelector: Unhandled CSS condition type '7'. Accepting it silently.
-   4.556 [id=103]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: *:x).] sourceName=[http://localhost:52974/jenkins/static/13b02d4d/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   5.518 [id=103]	WARNING	c.g.h.j.host.css.CSSStyleSheet#isValidSelector: Unhandled CSS condition type '7'. Accepting it silently.
-   5.523 [id=103]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: *:x).] sourceName=[http://localhost:52974/jenkins/static/13b02d4d/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   5.828 [id=103]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148893504'] :input.block-control' error: Invalid selector: *[id="sizzle1531148893504"] *:input.block-control).] sourceName=[http://localhost:52974/jenkins/static/13b02d4d/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   5.830 [id=103]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148893504'] :input.block-control' error: Invalid selector: *[id="sizzle1531148893504"] *:input.block-control).] sourceName=[http://localhost:52974/jenkins/static/13b02d4d/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   5.833 [id=103]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148893504'] :input.block-control' error: Invalid selector: *[id="sizzle1531148893504"] *:input.block-control).] sourceName=[http://localhost:52974/jenkins/static/13b02d4d/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   5.834 [id=103]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148893504'] :input.block-control' error: Invalid selector: *[id="sizzle1531148893504"] *:input.block-control).] sourceName=[http://localhost:52974/jenkins/static/13b02d4d/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   5.836 [id=103]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148893504'] :input.block-control' error: Invalid selector: *[id="sizzle1531148893504"] *:input.block-control).] sourceName=[http://localhost:52974/jenkins/static/13b02d4d/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   5.838 [id=103]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148893504'] :input.block-control' error: Invalid selector: *[id="sizzle1531148893504"] *:input.block-control).] sourceName=[http://localhost:52974/jenkins/static/13b02d4d/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   5.839 [id=103]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148893504'] :input.block-control' error: Invalid selector: *[id="sizzle1531148893504"] *:input.block-control).] sourceName=[http://localhost:52974/jenkins/static/13b02d4d/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   5.842 [id=103]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148893504'] :input.block-control' error: Invalid selector: *[id="sizzle1531148893504"] *:input.block-control).] sourceName=[http://localhost:52974/jenkins/static/13b02d4d/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   5.845 [id=103]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148893504'] :input.block-control' error: Invalid selector: *[id="sizzle1531148893504"] *:input.block-control).] sourceName=[http://localhost:52974/jenkins/static/13b02d4d/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   5.847 [id=103]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148893504'] :input.block-control' error: Invalid selector: *[id="sizzle1531148893504"] *:input.block-control).] sourceName=[http://localhost:52974/jenkins/static/13b02d4d/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   5.850 [id=103]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148893504'] :input.block-control' error: Invalid selector: *[id="sizzle1531148893504"] *:input.block-control).] sourceName=[http://localhost:52974/jenkins/static/13b02d4d/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   5.853 [id=103]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148893504'] :input.block-control' error: Invalid selector: *[id="sizzle1531148893504"] *:input.block-control).] sourceName=[http://localhost:52974/jenkins/static/13b02d4d/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   5.855 [id=103]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148893504'] :input.block-control' error: Invalid selector: *[id="sizzle1531148893504"] *:input.block-control).] sourceName=[http://localhost:52974/jenkins/static/13b02d4d/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   5.859 [id=103]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148893504'] :input.block-control' error: Invalid selector: *[id="sizzle1531148893504"] *:input.block-control).] sourceName=[http://localhost:52974/jenkins/static/13b02d4d/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   5.865 [id=103]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148893504'] :input.block-control' error: Invalid selector: *[id="sizzle1531148893504"] *:input.block-control).] sourceName=[http://localhost:52974/jenkins/static/13b02d4d/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   5.869 [id=103]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148893504'] :input.block-control' error: Invalid selector: *[id="sizzle1531148893504"] *:input.block-control).] sourceName=[http://localhost:52974/jenkins/static/13b02d4d/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-  19.257 [id=103]	WARNING	c.g.h.j.host.css.CSSStyleSheet#isValidSelector: Unhandled CSS condition type '7'. Accepting it silently.
-  19.259 [id=103]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: *:x).] sourceName=[http://localhost:52974/jenkins/static/13b02d4d/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-  19.958 [id=103]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
-  19.962 [id=103]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
-  19.962 [id=103]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
-  19.962 [id=103]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
-  19.968 [id=159]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #3 from /192.168.11.216:54265
-  19.969 [id=103]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
-  19.969 [id=103]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
-  19.970 [id=103]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
-WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
-WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
-  19.970 [id=103]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+   0.017 [id=100]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:49764/jenkins/
+   0.038 [id=106]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.040 [id=112]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.221 [id=110]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.222 [id=107]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.223 [id=112]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.230 [id=113]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   1.602 [id=108]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 49835
+   1.602 [id=110]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   1.617 [id=100]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   1.622 [id=100]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   1.622 [id=100]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   1.623 [id=100]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   1.626 [id=133]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #3 from /192.168.11.216:49837
+   1.627 [id=100]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   1.627 [id=100]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   1.628 [id=100]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   1.628 [id=100]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
 === Starting testConfigRoundtripFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
-   0.011 [id=160]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:54330/jenkins/
-   0.021 [id=166]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
-   0.023 [id=170]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
-   0.127 [id=170]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
-   0.127 [id=168]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
-   0.129 [id=169]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
-   0.135 [id=173]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
-   0.573 [id=166]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 54331
-   0.574 [id=166]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
-   2.721 [id=160]	WARNING	c.g.h.j.host.css.CSSStyleSheet#isValidSelector: Unhandled CSS condition type '7'. Accepting it silently.
-   2.722 [id=160]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: *:x).] sourceName=[http://localhost:54330/jenkins/static/0baffd82/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   3.385 [id=160]	WARNING	c.g.h.j.host.css.CSSStyleSheet#isValidSelector: Unhandled CSS condition type '7'. Accepting it silently.
-   3.386 [id=160]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: *:x).] sourceName=[http://localhost:54330/jenkins/static/0baffd82/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   3.463 [id=160]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148911584'] :input.block-control' error: Invalid selector: *[id="sizzle1531148911584"] *:input.block-control).] sourceName=[http://localhost:54330/jenkins/static/0baffd82/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   3.464 [id=160]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148911584'] :input.block-control' error: Invalid selector: *[id="sizzle1531148911584"] *:input.block-control).] sourceName=[http://localhost:54330/jenkins/static/0baffd82/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   3.465 [id=160]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148911584'] :input.block-control' error: Invalid selector: *[id="sizzle1531148911584"] *:input.block-control).] sourceName=[http://localhost:54330/jenkins/static/0baffd82/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   3.466 [id=160]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148911584'] :input.block-control' error: Invalid selector: *[id="sizzle1531148911584"] *:input.block-control).] sourceName=[http://localhost:54330/jenkins/static/0baffd82/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   3.467 [id=160]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148911584'] :input.block-control' error: Invalid selector: *[id="sizzle1531148911584"] *:input.block-control).] sourceName=[http://localhost:54330/jenkins/static/0baffd82/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   3.468 [id=160]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148911584'] :input.block-control' error: Invalid selector: *[id="sizzle1531148911584"] *:input.block-control).] sourceName=[http://localhost:54330/jenkins/static/0baffd82/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   3.469 [id=160]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148911584'] :input.block-control' error: Invalid selector: *[id="sizzle1531148911584"] *:input.block-control).] sourceName=[http://localhost:54330/jenkins/static/0baffd82/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   3.471 [id=160]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148911584'] :input.block-control' error: Invalid selector: *[id="sizzle1531148911584"] *:input.block-control).] sourceName=[http://localhost:54330/jenkins/static/0baffd82/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   3.471 [id=160]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148911584'] :input.block-control' error: Invalid selector: *[id="sizzle1531148911584"] *:input.block-control).] sourceName=[http://localhost:54330/jenkins/static/0baffd82/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   3.472 [id=160]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148911584'] :input.block-control' error: Invalid selector: *[id="sizzle1531148911584"] *:input.block-control).] sourceName=[http://localhost:54330/jenkins/static/0baffd82/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   3.474 [id=160]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148911584'] :input.block-control' error: Invalid selector: *[id="sizzle1531148911584"] *:input.block-control).] sourceName=[http://localhost:54330/jenkins/static/0baffd82/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   3.475 [id=160]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148911584'] :input.block-control' error: Invalid selector: *[id="sizzle1531148911584"] *:input.block-control).] sourceName=[http://localhost:54330/jenkins/static/0baffd82/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   3.476 [id=160]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148911584'] :input.block-control' error: Invalid selector: *[id="sizzle1531148911584"] *:input.block-control).] sourceName=[http://localhost:54330/jenkins/static/0baffd82/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   3.478 [id=160]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148911584'] :input.block-control' error: Invalid selector: *[id="sizzle1531148911584"] *:input.block-control).] sourceName=[http://localhost:54330/jenkins/static/0baffd82/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   3.479 [id=160]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148911584'] :input.block-control' error: Invalid selector: *[id="sizzle1531148911584"] *:input.block-control).] sourceName=[http://localhost:54330/jenkins/static/0baffd82/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-   3.481 [id=160]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '[id='sizzle1531148911584'] :input.block-control' error: Invalid selector: *[id="sizzle1531148911584"] *:input.block-control).] sourceName=[http://localhost:54330/jenkins/static/0baffd82/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-  15.758 [id=160]	WARNING	c.g.h.j.host.css.CSSStyleSheet#isValidSelector: Unhandled CSS condition type '7'. Accepting it silently.
-  15.759 [id=160]	SEVERE	c.g.h.j.StrictErrorReporter#runtimeError: runtimeError: message=[An invalid or illegal selector was specified (selector: '*,:x' error: Invalid selector: *:x).] sourceName=[http://localhost:54330/jenkins/static/0baffd82/assets/jquery-detached/jsmodules/jquery2.js] line=[996] lineSource=[null] lineOffset=[0]
-  16.341 [id=160]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
-  16.347 [id=160]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
-  16.348 [id=160]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
-  16.348 [id=160]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
-  16.355 [id=210]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #4 from /192.168.11.216:55363
-  16.356 [id=160]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
-  16.357 [id=160]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
-  16.358 [id=160]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
-WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
-WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
-  16.358 [id=160]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+   0.015 [id=134]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:49902/jenkins/
+   0.027 [id=140]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.029 [id=146]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.163 [id=147]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.163 [id=143]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.164 [id=141]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.168 [id=141]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.654 [id=145]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 49903
+   0.654 [id=143]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.670 [id=134]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.673 [id=134]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.674 [id=134]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.674 [id=134]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.677 [id=166]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #4 from /192.168.11.216:49905
+   0.678 [id=134]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.679 [id=134]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.680 [id=134]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.680 [id=134]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
 === Starting testBuildFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
-   0.008 [id=211]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:55364/jenkins/
-   0.019 [id=217]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
-   0.021 [id=224]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
-   0.118 [id=217]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
-   0.119 [id=222]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
-   0.119 [id=223]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
-   0.121 [id=223]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
-   0.890 [id=218]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 55429
-   0.890 [id=218]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
-   0.934 [id=225]	INFO	hudson.model.Run#execute: test0 #1 main build action completed: SUCCESS
-   0.940 [id=211]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
-   0.942 [id=211]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
-   0.943 [id=211]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
-   0.943 [id=211]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
-   0.945 [id=248]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #5 from /192.168.11.216:55431
-   0.946 [id=211]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
-   0.946 [id=211]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
-   0.947 [id=211]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
-   0.947 [id=211]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+   0.010 [id=167]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:49906/jenkins/
+   0.021 [id=173]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.023 [id=179]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.134 [id=180]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.138 [id=174]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.139 [id=174]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   1.097 [id=174]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   1.115 [id=177]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 50041
+   1.115 [id=174]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   1.127 [id=167]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   1.130 [id=167]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   1.131 [id=167]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   1.131 [id=167]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   1.134 [id=200]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #5 from /192.168.11.216:50043
+   1.135 [id=167]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   1.135 [id=167]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   1.137 [id=167]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   1.137 [id=167]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
 === Starting testScriptedPipeline(io.jenkins.plugins.sample.HelloWorldBuilderTest)
-   0.008 [id=249]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:55432/jenkins/
-   0.018 [id=255]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
-   0.019 [id=259]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
-   0.103 [id=260]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
-   0.104 [id=255]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
-   0.104 [id=255]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
-   0.315 [id=255]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
-   0.331 [id=262]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 55433
-   0.331 [id=262]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
-   1.795 [id=43]	INFO	o.j.h.test.SimpleCommandLauncher#launch: agent launched for slave0
-   2.510 [id=43]	INFO	o.j.p.workflow.job.WorkflowRun#finish: test-scripted-pipeline #1 completed: SUCCESS
-   3.093 [id=249]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
-   3.097 [id=249]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
-   3.097 [id=249]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
-   3.097 [id=249]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
-   3.102 [id=303]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #6 from /192.168.11.216:55627
-   3.103 [id=249]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
-   3.103 [id=249]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
-   3.104 [id=249]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
-   3.105 [id=249]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+   0.010 [id=201]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:50044/jenkins/
+   0.022 [id=207]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.024 [id=207]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.114 [id=214]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.115 [id=209]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.116 [id=212]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.405 [id=212]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.423 [id=207]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 50045
+   0.424 [id=211]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   2.259 [id=43]	INFO	o.j.h.test.SimpleCommandLauncher#launch: agent launched for slave0
+   3.734 [id=240]	INFO	o.j.p.workflow.job.WorkflowRun#finish: test-scripted-pipeline #1 completed: FAILURE
+   4.258 [id=201]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   4.262 [id=201]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   4.262 [id=201]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   4.262 [id=201]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   4.269 [id=253]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #6 from /192.168.11.216:50304
+   4.270 [id=201]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   4.270 [id=201]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   4.272 [id=201]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   4.272 [id=201]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testBuildFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.017 [id=254]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:50305/jenkins/
+   0.033 [id=260]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.034 [id=266]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.157 [id=265]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.158 [id=263]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.158 [id=267]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.553 [id=262]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.570 [id=263]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 50370
+   0.570 [id=263]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.579 [id=254]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.582 [id=254]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.582 [id=254]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.583 [id=254]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.585 [id=286]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #7 from /192.168.11.216:50372
+   0.586 [id=254]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.586 [id=254]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.587 [id=254]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.587 [id=254]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testConfigRoundtrip(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.010 [id=287]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:50373/jenkins/
+   0.022 [id=293]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.024 [id=293]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.121 [id=293]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.124 [id=295]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.124 [id=295]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.129 [id=300]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.607 [id=297]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 50439
+   0.607 [id=297]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.620 [id=287]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.626 [id=287]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.627 [id=287]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.627 [id=287]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.629 [id=320]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #8 from /192.168.11.216:50441
+   0.630 [id=287]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.631 [id=287]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.632 [id=287]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.632 [id=287]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testBuild(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.010 [id=321]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:50442/jenkins/
+   0.022 [id=327]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.024 [id=327]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.132 [id=327]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.132 [id=334]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.135 [id=328]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.740 [id=332]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.758 [id=332]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 50507
+   0.758 [id=334]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.769 [id=321]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.773 [id=321]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.774 [id=321]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.774 [id=321]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.778 [id=354]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #9 from /192.168.11.216:50509
+   0.779 [id=321]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.780 [id=321]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.781 [id=321]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.781 [id=321]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testConfigRoundtripFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.010 [id=355]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:50510/jenkins/
+   0.021 [id=361]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.023 [id=362]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.095 [id=368]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.095 [id=366]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.096 [id=365]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.098 [id=367]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   1.625 [id=362]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 50575
+   1.625 [id=363]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   1.635 [id=355]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   1.639 [id=355]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   1.640 [id=355]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   1.640 [id=355]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   1.643 [id=389]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #10 from /192.168.11.216:50577
+   1.644 [id=355]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   1.644 [id=355]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   1.645 [id=355]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   1.645 [id=355]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testScriptedPipeline(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.010 [id=390]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:50642/jenkins/
+   0.022 [id=396]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.024 [id=402]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.096 [id=398]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.096 [id=403]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.097 [id=403]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   1.072 [id=396]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   1.090 [id=396]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 50707
+   1.090 [id=396]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   2.316 [id=240]	INFO	o.j.h.test.SimpleCommandLauncher#launch: agent launched for slave0
+   2.476 [id=237]	INFO	o.j.p.workflow.job.WorkflowRun#finish: test-scripted-pipeline #1 completed: FAILURE
+   3.370 [id=390]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   3.377 [id=390]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   3.377 [id=390]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   3.377 [id=390]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   3.385 [id=439]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #11 from /192.168.11.216:50837
+   3.389 [id=390]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   3.389 [id=390]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   3.390 [id=390]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   3.390 [id=390]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testBuild(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.009 [id=440]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:50838/jenkins/
+   0.020 [id=446]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.021 [id=451]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.090 [id=449]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.091 [id=450]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.091 [id=450]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.846 [id=447]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.863 [id=448]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 50903
+   0.863 [id=448]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.871 [id=440]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.874 [id=440]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.876 [id=440]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.876 [id=440]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.879 [id=472]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #12 from /192.168.11.216:50905
+   0.879 [id=440]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.880 [id=440]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.881 [id=440]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.881 [id=440]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testScriptedPipeline(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.008 [id=473]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:50906/jenkins/
+   0.019 [id=479]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.020 [id=479]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.101 [id=481]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.102 [id=486]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.102 [id=485]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.104 [id=485]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.575 [id=484]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 50971
+   0.575 [id=484]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   1.726 [id=240]	INFO	o.j.h.test.SimpleCommandLauncher#launch: agent launched for slave0
+   1.894 [id=237]	INFO	o.j.p.workflow.job.WorkflowRun#finish: test-scripted-pipeline #1 completed: FAILURE
+   2.775 [id=473]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   2.779 [id=473]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   2.780 [id=473]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   2.780 [id=473]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   2.785 [id=522]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #13 from /192.168.11.216:51103
+   2.785 [id=473]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   2.786 [id=473]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   2.788 [id=473]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   2.788 [id=473]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testConfigRoundtripFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.016 [id=523]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51104/jenkins/
+   0.027 [id=529]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.029 [id=529]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.115 [id=534]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.115 [id=531]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.115 [id=531]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.937 [id=533]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.951 [id=533]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51170
+   0.951 [id=533]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.959 [id=523]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.964 [id=523]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.965 [id=523]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.965 [id=523]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.968 [id=556]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #14 from /192.168.11.216:51172
+   0.969 [id=523]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.969 [id=523]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.970 [id=523]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.971 [id=523]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testBuildFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.009 [id=557]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51173/jenkins/
+   0.019 [id=563]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.021 [id=570]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.087 [id=563]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.087 [id=566]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.088 [id=566]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.381 [id=564]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.396 [id=565]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51174
+   0.397 [id=565]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.405 [id=557]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.407 [id=557]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.408 [id=557]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.408 [id=557]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.411 [id=589]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #15 from /192.168.11.216:51176
+   0.411 [id=557]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.412 [id=557]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.412 [id=557]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.412 [id=557]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testConfigRoundtrip(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.013 [id=590]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51189/jenkins/
+   0.025 [id=596]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.029 [id=603]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.154 [id=598]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.154 [id=598]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.155 [id=597]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.592 [id=600]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.619 [id=603]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51244
+   0.619 [id=603]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.626 [id=590]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.629 [id=590]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.630 [id=590]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.630 [id=590]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.633 [id=623]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #16 from /192.168.11.216:51246
+   0.633 [id=590]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.633 [id=590]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.634 [id=590]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.634 [id=590]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testBuildFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.006 [id=624]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51247/jenkins/
+   0.014 [id=630]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.015 [id=636]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.078 [id=636]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.078 [id=636]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.079 [id=632]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.085 [id=637]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.351 [id=636]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51312
+   0.351 [id=636]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.358 [id=624]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.360 [id=624]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.361 [id=624]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.361 [id=624]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.363 [id=656]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #17 from /192.168.11.216:51314
+   0.364 [id=624]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.364 [id=624]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.365 [id=624]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.365 [id=624]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testBuild(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.007 [id=657]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51315/jenkins/
+   0.019 [id=663]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.021 [id=670]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.075 [id=665]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.075 [id=670]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.076 [id=664]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.434 [id=666]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.450 [id=665]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51316
+   0.451 [id=665]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.459 [id=657]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.463 [id=657]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.463 [id=657]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.463 [id=657]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.466 [id=690]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #18 from /192.168.11.216:51318
+   0.467 [id=657]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.467 [id=657]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.468 [id=657]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.468 [id=657]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testScriptedPipeline(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.008 [id=691]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51319/jenkins/
+   0.017 [id=697]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.018 [id=704]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.084 [id=700]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.085 [id=700]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.087 [id=699]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.475 [id=699]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.491 [id=703]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51384
+   0.492 [id=703]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   1.604 [id=240]	INFO	o.j.h.test.SimpleCommandLauncher#launch: agent launched for slave0
+   1.755 [id=237]	INFO	o.j.p.workflow.job.WorkflowRun#finish: test-scripted-pipeline #1 completed: FAILURE
+   2.660 [id=691]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   2.663 [id=691]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   2.663 [id=691]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   2.663 [id=691]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   2.666 [id=740]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #19 from /192.168.11.216:51525
+   2.667 [id=691]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   2.667 [id=691]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   2.668 [id=691]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   2.668 [id=691]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testConfigRoundtripFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.010 [id=741]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51526/jenkins/
+   0.022 [id=747]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.023 [id=747]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.084 [id=750]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.085 [id=752]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.085 [id=748]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.087 [id=754]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.241 [id=752]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51527
+   0.241 [id=752]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.250 [id=741]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.256 [id=741]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.257 [id=741]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.257 [id=741]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.260 [id=775]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #20 from /192.168.11.216:51529
+   0.261 [id=741]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.261 [id=741]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.262 [id=741]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.262 [id=741]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testConfigRoundtrip(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.009 [id=776]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51595/jenkins/
+   0.020 [id=782]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.022 [id=782]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.084 [id=783]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.084 [id=784]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.084 [id=787]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.683 [id=787]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.700 [id=785]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51596
+   0.700 [id=785]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.708 [id=776]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.711 [id=776]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.711 [id=776]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.711 [id=776]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.713 [id=808]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #21 from /192.168.11.216:51598
+   0.714 [id=776]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.714 [id=776]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.715 [id=776]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.715 [id=776]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testBuild(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.005 [id=809]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51599/jenkins/
+   0.013 [id=815]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.015 [id=822]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.068 [id=819]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.068 [id=822]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.069 [id=822]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.071 [id=822]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.451 [id=818]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51664
+   0.451 [id=820]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.457 [id=809]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.459 [id=809]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.459 [id=809]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.459 [id=809]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.461 [id=841]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #22 from /192.168.11.216:51666
+   0.462 [id=809]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.462 [id=809]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.463 [id=809]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.463 [id=809]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testConfigRoundtripFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.005 [id=842]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51667/jenkins/
+   0.013 [id=848]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.014 [id=848]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.067 [id=854]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.067 [id=855]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.068 [id=853]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   1.318 [id=848]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   1.334 [id=849]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51732
+   1.334 [id=849]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   1.344 [id=842]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   1.346 [id=842]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   1.346 [id=842]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   1.346 [id=842]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   1.349 [id=875]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #23 from /192.168.11.216:51734
+   1.349 [id=842]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   1.350 [id=842]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   1.350 [id=842]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   1.351 [id=842]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testBuildFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.005 [id=876]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51735/jenkins/
+   0.012 [id=882]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.014 [id=888]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.087 [id=888]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.089 [id=885]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.091 [id=884]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.475 [id=888]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.489 [id=888]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51800
+   0.489 [id=888]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.496 [id=876]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.499 [id=876]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.499 [id=876]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.499 [id=876]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.502 [id=910]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #24 from /192.168.11.216:51802
+   0.502 [id=876]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.502 [id=876]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.503 [id=876]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.503 [id=876]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testConfigRoundtrip(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.005 [id=911]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51803/jenkins/
+   0.013 [id=917]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.015 [id=920]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.065 [id=919]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.065 [id=920]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.066 [id=917]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.253 [id=917]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.269 [id=922]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51804
+   0.269 [id=922]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.279 [id=911]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.281 [id=911]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.282 [id=911]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.282 [id=911]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.284 [id=944]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #25 from /192.168.11.216:51806
+   0.285 [id=911]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.285 [id=911]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.286 [id=911]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.286 [id=911]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+=== Starting testScriptedPipeline(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+   0.005 [id=945]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51807/jenkins/
+   0.013 [id=951]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.013 [id=955]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.064 [id=956]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.065 [id=953]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.065 [id=958]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.586 [id=952]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.604 [id=956]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51872
+   0.604 [id=956]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   1.943 [id=240]	INFO	o.j.h.test.SimpleCommandLauncher#launch: agent launched for slave0
+   2.089 [id=239]	INFO	o.j.p.workflow.job.WorkflowRun#finish: test-scripted-pipeline #1 completed: FAILURE
+   2.989 [id=945]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   2.993 [id=945]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   2.993 [id=945]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   2.993 [id=945]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   3.000 [id=994]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #26 from /192.168.11.216:52003
+   3.001 [id=945]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   3.001 [id=945]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   3.003 [id=945]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   3.003 [id=945]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped

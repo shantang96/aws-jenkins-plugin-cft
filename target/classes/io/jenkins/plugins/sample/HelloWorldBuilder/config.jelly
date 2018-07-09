@@ -1,6 +1,6 @@
 <?jelly escape-by-default='true'?>
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
-    <img src="/Users/ShantanuGupta/Downloads/tomcat-new/webapps/plugins/latest-cft-demo/logo.jpg"/>
+    <img src="https://www.cloudbees.com/sites/default/files/newtglobal_logo_0_0.png"/>
     <f:entry title="${%Name}" field="name">
         <f:textbox />
     </f:entry>

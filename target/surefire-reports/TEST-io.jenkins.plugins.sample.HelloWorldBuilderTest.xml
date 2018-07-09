@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="io.jenkins.plugins.sample.HelloWorldBuilderTest" time="42.205" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="io.jenkins.plugins.sample.HelloWorldBuilderTest" time="35.571" tests="25" errors="20" skipped="0" failures="5">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre/lib"/>
@@ -63,9 +63,1529 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testBuild" classname="io.jenkins.plugins.sample.HelloWorldBuilderTest" time="0.827"/>
-  <testcase name="testConfigRoundtrip" classname="io.jenkins.plugins.sample.HelloWorldBuilderTest" time="20.212"/>
-  <testcase name="testConfigRoundtripFrench" classname="io.jenkins.plugins.sample.HelloWorldBuilderTest" time="16.631"/>
-  <testcase name="testBuildFrench" classname="io.jenkins.plugins.sample.HelloWorldBuilderTest" time="1.11"/>
-  <testcase name="testScriptedPipeline" classname="io.jenkins.plugins.sample.HelloWorldBuilderTest" time="3.401"/>
+  <testcase name="testBuild" classname="io.jenkins.plugins.sample.HelloWorldBuilderTest" time="1.709">
+    <error message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testBuild(HelloWorldBuilderTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]></error>
+    <system-out><![CDATA[=== Starting testBuild(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+    <system-err><![CDATA[   0.043 [id=66]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:49632/jenkins/
+   0.060 [id=72]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.062 [id=77]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.398 [id=75]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.399 [id=79]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.400 [id=73]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   1.329 [id=78]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   1.349 [id=78]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 49697
+   1.349 [id=74]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   1.405 [id=66]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   1.409 [id=66]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   1.410 [id=66]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   1.411 [id=66]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   1.417 [id=99]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #2 from /192.168.11.216:49763
+   1.418 [id=66]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   1.419 [id=66]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   1.421 [id=66]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   1.421 [id=66]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    <rerunError message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testBuild(HelloWorldBuilderTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testBuild(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.010 [id=321]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:50442/jenkins/
+   0.022 [id=327]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.024 [id=327]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.132 [id=327]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.132 [id=334]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.135 [id=328]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.740 [id=332]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.758 [id=332]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 50507
+   0.758 [id=334]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.769 [id=321]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.773 [id=321]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.774 [id=321]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.774 [id=321]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.778 [id=354]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #9 from /192.168.11.216:50509
+   0.779 [id=321]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.780 [id=321]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.781 [id=321]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.781 [id=321]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunError>
+    <rerunError message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testBuild(HelloWorldBuilderTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testBuild(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.009 [id=440]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:50838/jenkins/
+   0.020 [id=446]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.021 [id=451]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.090 [id=449]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.091 [id=450]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.091 [id=450]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.846 [id=447]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.863 [id=448]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 50903
+   0.863 [id=448]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.871 [id=440]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.874 [id=440]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.876 [id=440]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.876 [id=440]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.879 [id=472]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #12 from /192.168.11.216:50905
+   0.879 [id=440]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.880 [id=440]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.881 [id=440]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.881 [id=440]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunError>
+    <rerunError message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testBuild(HelloWorldBuilderTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testBuild(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.007 [id=657]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51315/jenkins/
+   0.019 [id=663]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.021 [id=670]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.075 [id=665]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.075 [id=670]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.076 [id=664]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.434 [id=666]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.450 [id=665]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51316
+   0.451 [id=665]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.459 [id=657]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.463 [id=657]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.463 [id=657]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.463 [id=657]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.466 [id=690]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #18 from /192.168.11.216:51318
+   0.467 [id=657]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.467 [id=657]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.468 [id=657]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.468 [id=657]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunError>
+    <rerunError message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testBuild(HelloWorldBuilderTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testBuild(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.005 [id=809]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51599/jenkins/
+   0.013 [id=815]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.015 [id=822]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.068 [id=819]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.068 [id=822]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.069 [id=822]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.071 [id=822]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.451 [id=818]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51664
+   0.451 [id=820]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.457 [id=809]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.459 [id=809]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.459 [id=809]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.459 [id=809]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.461 [id=841]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #22 from /192.168.11.216:51666
+   0.462 [id=809]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.462 [id=809]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.463 [id=809]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.463 [id=809]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunError>
+  </testcase>
+  <testcase name="testConfigRoundtrip" classname="io.jenkins.plugins.sample.HelloWorldBuilderTest" time="1.828">
+    <error message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testConfigRoundtrip(HelloWorldBuilderTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]></error>
+    <system-out><![CDATA[=== Starting testConfigRoundtrip(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+    <system-err><![CDATA[   0.017 [id=100]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:49764/jenkins/
+   0.038 [id=106]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.040 [id=112]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.221 [id=110]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.222 [id=107]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.223 [id=112]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.230 [id=113]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   1.602 [id=108]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 49835
+   1.602 [id=110]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   1.617 [id=100]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   1.622 [id=100]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   1.622 [id=100]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   1.623 [id=100]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   1.626 [id=133]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #3 from /192.168.11.216:49837
+   1.627 [id=100]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   1.627 [id=100]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   1.628 [id=100]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   1.628 [id=100]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    <rerunError message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testConfigRoundtrip(HelloWorldBuilderTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testConfigRoundtrip(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.010 [id=287]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:50373/jenkins/
+   0.022 [id=293]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.024 [id=293]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.121 [id=293]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.124 [id=295]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.124 [id=295]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.129 [id=300]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.607 [id=297]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 50439
+   0.607 [id=297]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.620 [id=287]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.626 [id=287]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.627 [id=287]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.627 [id=287]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.629 [id=320]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #8 from /192.168.11.216:50441
+   0.630 [id=287]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.631 [id=287]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.632 [id=287]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.632 [id=287]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunError>
+    <rerunError message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testConfigRoundtrip(HelloWorldBuilderTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testConfigRoundtrip(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.013 [id=590]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51189/jenkins/
+   0.025 [id=596]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.029 [id=603]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.154 [id=598]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.154 [id=598]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.155 [id=597]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.592 [id=600]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.619 [id=603]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51244
+   0.619 [id=603]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.626 [id=590]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.629 [id=590]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.630 [id=590]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.630 [id=590]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.633 [id=623]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #16 from /192.168.11.216:51246
+   0.633 [id=590]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.633 [id=590]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.634 [id=590]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.634 [id=590]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunError>
+    <rerunError message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testConfigRoundtrip(HelloWorldBuilderTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testConfigRoundtrip(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.009 [id=776]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51595/jenkins/
+   0.020 [id=782]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.022 [id=782]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.084 [id=783]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.084 [id=784]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.084 [id=787]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.683 [id=787]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.700 [id=785]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51596
+   0.700 [id=785]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.708 [id=776]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.711 [id=776]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.711 [id=776]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.711 [id=776]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.713 [id=808]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #21 from /192.168.11.216:51598
+   0.714 [id=776]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.714 [id=776]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.715 [id=776]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.715 [id=776]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunError>
+    <rerunError message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testConfigRoundtrip(HelloWorldBuilderTest.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testConfigRoundtrip(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.005 [id=911]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51803/jenkins/
+   0.013 [id=917]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.015 [id=920]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.065 [id=919]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.065 [id=920]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.066 [id=917]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.253 [id=917]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.269 [id=922]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51804
+   0.269 [id=922]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.279 [id=911]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.281 [id=911]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.282 [id=911]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.282 [id=911]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.284 [id=944]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #25 from /192.168.11.216:51806
+   0.285 [id=911]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.285 [id=911]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.286 [id=911]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.286 [id=911]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunError>
+  </testcase>
+  <testcase name="testConfigRoundtripFrench" classname="io.jenkins.plugins.sample.HelloWorldBuilderTest" time="0.812">
+    <error message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testConfigRoundtripFrench(HelloWorldBuilderTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]></error>
+    <system-out><![CDATA[=== Starting testConfigRoundtripFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+    <system-err><![CDATA[   0.015 [id=134]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:49902/jenkins/
+   0.027 [id=140]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.029 [id=146]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.163 [id=147]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.163 [id=143]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.164 [id=141]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.168 [id=141]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.654 [id=145]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 49903
+   0.654 [id=143]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.670 [id=134]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.673 [id=134]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.674 [id=134]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.674 [id=134]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.677 [id=166]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #4 from /192.168.11.216:49905
+   0.678 [id=134]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.679 [id=134]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.680 [id=134]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.680 [id=134]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    <rerunError message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testConfigRoundtripFrench(HelloWorldBuilderTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testConfigRoundtripFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.010 [id=355]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:50510/jenkins/
+   0.021 [id=361]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.023 [id=362]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.095 [id=368]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.095 [id=366]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.096 [id=365]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.098 [id=367]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   1.625 [id=362]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 50575
+   1.625 [id=363]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   1.635 [id=355]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   1.639 [id=355]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   1.640 [id=355]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   1.640 [id=355]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   1.643 [id=389]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #10 from /192.168.11.216:50577
+   1.644 [id=355]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   1.644 [id=355]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   1.645 [id=355]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   1.645 [id=355]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunError>
+    <rerunError message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testConfigRoundtripFrench(HelloWorldBuilderTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testConfigRoundtripFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.016 [id=523]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51104/jenkins/
+   0.027 [id=529]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.029 [id=529]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.115 [id=534]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.115 [id=531]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.115 [id=531]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.937 [id=533]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.951 [id=533]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51170
+   0.951 [id=533]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.959 [id=523]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.964 [id=523]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.965 [id=523]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.965 [id=523]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.968 [id=556]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #14 from /192.168.11.216:51172
+   0.969 [id=523]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.969 [id=523]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.970 [id=523]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.971 [id=523]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunError>
+    <rerunError message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testConfigRoundtripFrench(HelloWorldBuilderTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testConfigRoundtripFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.010 [id=741]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51526/jenkins/
+   0.022 [id=747]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.023 [id=747]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.084 [id=750]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.085 [id=752]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.085 [id=748]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.087 [id=754]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.241 [id=752]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51527
+   0.241 [id=752]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.250 [id=741]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.256 [id=741]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.257 [id=741]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.257 [id=741]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.260 [id=775]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #20 from /192.168.11.216:51529
+   0.261 [id=741]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.261 [id=741]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.262 [id=741]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.262 [id=741]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunError>
+    <rerunError message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testConfigRoundtripFrench(HelloWorldBuilderTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testConfigRoundtripFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.005 [id=842]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51667/jenkins/
+   0.013 [id=848]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.014 [id=848]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.067 [id=854]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.067 [id=855]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.068 [id=853]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   1.318 [id=848]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   1.334 [id=849]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51732
+   1.334 [id=849]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   1.344 [id=842]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   1.346 [id=842]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   1.346 [id=842]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   1.346 [id=842]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   1.349 [id=875]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #23 from /192.168.11.216:51734
+   1.349 [id=842]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   1.350 [id=842]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   1.350 [id=842]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   1.351 [id=842]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunError>
+  </testcase>
+  <testcase name="testBuildFrench" classname="io.jenkins.plugins.sample.HelloWorldBuilderTest" time="1.237">
+    <error message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testBuildFrench(HelloWorldBuilderTest.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]></error>
+    <system-out><![CDATA[=== Starting testBuildFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+    <system-err><![CDATA[   0.010 [id=167]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:49906/jenkins/
+   0.021 [id=173]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.023 [id=179]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.134 [id=180]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.138 [id=174]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.139 [id=174]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   1.097 [id=174]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   1.115 [id=177]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 50041
+   1.115 [id=174]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   1.127 [id=167]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   1.130 [id=167]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   1.131 [id=167]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   1.131 [id=167]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   1.134 [id=200]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #5 from /192.168.11.216:50043
+   1.135 [id=167]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   1.135 [id=167]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   1.137 [id=167]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   1.137 [id=167]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    <rerunError message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testBuildFrench(HelloWorldBuilderTest.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testBuildFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.017 [id=254]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:50305/jenkins/
+   0.033 [id=260]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.034 [id=266]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.157 [id=265]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.158 [id=263]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.158 [id=267]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.553 [id=262]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.570 [id=263]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 50370
+   0.570 [id=263]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.579 [id=254]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.582 [id=254]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.582 [id=254]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.583 [id=254]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.585 [id=286]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #7 from /192.168.11.216:50372
+   0.586 [id=254]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.586 [id=254]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.587 [id=254]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.587 [id=254]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunError>
+    <rerunError message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testBuildFrench(HelloWorldBuilderTest.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testBuildFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.009 [id=557]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51173/jenkins/
+   0.019 [id=563]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.021 [id=570]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.087 [id=563]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.087 [id=566]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.088 [id=566]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.381 [id=564]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.396 [id=565]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51174
+   0.397 [id=565]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.405 [id=557]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.407 [id=557]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.408 [id=557]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.408 [id=557]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.411 [id=589]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #15 from /192.168.11.216:51176
+   0.411 [id=557]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.412 [id=557]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.412 [id=557]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.412 [id=557]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunError>
+    <rerunError message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testBuildFrench(HelloWorldBuilderTest.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testBuildFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.006 [id=624]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51247/jenkins/
+   0.014 [id=630]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.015 [id=636]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.078 [id=636]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.078 [id=636]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.079 [id=632]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.085 [id=637]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.351 [id=636]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51312
+   0.351 [id=636]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.358 [id=624]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.360 [id=624]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.361 [id=624]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.361 [id=624]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.363 [id=656]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #17 from /192.168.11.216:51314
+   0.364 [id=624]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.364 [id=624]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.365 [id=624]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.365 [id=624]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunError>
+    <rerunError message="io.jenkins.plugins.sample.HelloWorldBuilder.&lt;init&gt;(Ljava/lang/String;)V" type="java.lang.NoSuchMethodError"><![CDATA[java.lang.NoSuchMethodError: io.jenkins.plugins.sample.HelloWorldBuilder.<init>(Ljava/lang/String;)V
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testBuildFrench(HelloWorldBuilderTest.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testBuildFrench(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.005 [id=876]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51735/jenkins/
+   0.012 [id=882]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.014 [id=888]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.087 [id=888]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.089 [id=885]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.091 [id=884]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.475 [id=888]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.489 [id=888]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51800
+   0.489 [id=888]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   0.496 [id=876]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   0.499 [id=876]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   0.499 [id=876]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   0.499 [id=876]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   0.502 [id=910]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #24 from /192.168.11.216:51802
+   0.502 [id=876]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   0.502 [id=876]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   0.503 [id=876]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   0.503 [id=876]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunError>
+  </testcase>
+  <testcase name="testScriptedPipeline" classname="io.jenkins.plugins.sample.HelloWorldBuilderTest" time="4.663">
+    <failure message="unexpected build status; build log was:&#10;------&#10;Started&#10;[Pipeline] node&#10;Running on master in /var/folders/57/4wzjgqfx2vs3dwmwg_dzf27w0000gn/T/jenkinsTests.tmp/jenkins6187659164831766326test/workspace/test-scripted-pipeline&#10;[Pipeline] {&#10;[Pipeline] step&#10;[Pipeline] }&#10;[Pipeline] // node&#10;[Pipeline] End of Pipeline&#10;java.lang.IllegalArgumentException: Failed to prepare greet step&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:355)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;	at java.lang.reflect.Method.invoke(Method.java:497)&#10;	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)&#10;	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)&#10;	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)&#10;	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)&#10;	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)&#10;	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)&#10;	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)&#10;	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)&#10;	at WorkflowScript.run(WorkflowScript:2)&#10;	at ___cps.transform___(Native Method)&#10;	at com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:57)&#10;	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:109)&#10;	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:82)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;	at java.lang.reflect.Method.invoke(Method.java:497)&#10;	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)&#10;	at com.cloudbees.groovy.cps.impl.ConstantBlock.eval(ConstantBlock.java:21)&#10;	at com.cloudbees.groovy.cps.Next.step(Next.java:83)&#10;	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:173)&#10;	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:162)&#10;	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:122)&#10;	at org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:261)&#10;	at com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:162)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$001(SandboxContinuable.java:19)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:35)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:32)&#10;	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.GroovySandbox.runInSandbox(GroovySandbox.java:108)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:32)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:174)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:330)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.access$100(CpsThreadGroup.java:82)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:242)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:230)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$2.call(CpsVmExecutorService.java:64)&#10;	at java.util.concurrent.FutureTask.run(FutureTask.java:266)&#10;	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:112)&#10;	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)&#10;	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)&#10;	at java.util.concurrent.FutureTask.run(FutureTask.java:266)&#10;	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)&#10;	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)&#10;	at java.lang.Thread.run(Thread.java:745)&#10;Caused by: java.lang.IllegalArgumentException: Could not instantiate {delegate=@greet(&lt;anonymous&gt;=Bobby)} for CoreStep(delegate: SimpleBuildStep{ArtifactArchiver(artifacts: String, allowEmptyArchive?: boolean, caseSensitive?: boolean, defaultExcludes?: boolean, excludes?: String, fingerprint?: boolean, onlyIfSuccessful?: boolean) | Fingerprinter(targets: String) | HelloWorldBuilder(name: String, cloudformationtemplate: String, stackname: String, keyname: String, keyvaluepairs: String, useFrench?: boolean) | JUnitResultArchiver(testResults: String, healthScaleFactor?: double, keepLongStdio?: boolean, testDataPublishers?: java.lang.UnsupportedOperationException: do not know how to categorize attributes of type ? extends hudson.tasks.junit.TestDataPublisher[]) | Mailer(recipients: String, notifyEveryUnstableBuild: boolean, sendToIndividuals: boolean)}): java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:264)&#10;	at org.jenkinsci.plugins.workflow.steps.StepDescriptor.newInstance(StepDescriptor.java:201)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeStep(DSL.java:205)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:353)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;	at java.lang.reflect.Method.invoke(Method.java:497)&#10;	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)&#10;	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)&#10;	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)&#10;	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)&#10;	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)&#10;	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)&#10;	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)&#10;	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)&#10;	... 34 more&#10;Caused by: java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:254)&#10;	at org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable.instantiate(UninstantiatedDescribable.java:175)&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.coerce(DescribableModel.java:372)&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.buildArguments(DescribableModel.java:318)&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:259)&#10;	... 57 more&#10;Finished: FAILURE&#10;&#10;------&#10;&#10;Expected: is &lt;SUCCESS&gt;&#10;     but: was &lt;FAILURE&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+unexpected build status; build log was:
+------
+Started
+[Pipeline] node
+Running on master in /var/folders/57/4wzjgqfx2vs3dwmwg_dzf27w0000gn/T/jenkinsTests.tmp/jenkins6187659164831766326test/workspace/test-scripted-pipeline
+[Pipeline] {
+[Pipeline] step
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+java.lang.IllegalArgumentException: Failed to prepare greet step
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:355)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)
+	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)
+	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)
+	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)
+	at WorkflowScript.run(WorkflowScript:2)
+	at ___cps.transform___(Native Method)
+	at com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:57)
+	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:109)
+	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)
+	at com.cloudbees.groovy.cps.impl.ConstantBlock.eval(ConstantBlock.java:21)
+	at com.cloudbees.groovy.cps.Next.step(Next.java:83)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:173)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:162)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:122)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:261)
+	at com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:162)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$001(SandboxContinuable.java:19)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:35)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:32)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.GroovySandbox.runInSandbox(GroovySandbox.java:108)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:32)
+	at org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:174)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:330)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.access$100(CpsThreadGroup.java:82)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:242)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:230)
+	at org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$2.call(CpsVmExecutorService.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:112)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: Could not instantiate {delegate=@greet(<anonymous>=Bobby)} for CoreStep(delegate: SimpleBuildStep{ArtifactArchiver(artifacts: String, allowEmptyArchive?: boolean, caseSensitive?: boolean, defaultExcludes?: boolean, excludes?: String, fingerprint?: boolean, onlyIfSuccessful?: boolean) | Fingerprinter(targets: String) | HelloWorldBuilder(name: String, cloudformationtemplate: String, stackname: String, keyname: String, keyvaluepairs: String, useFrench?: boolean) | JUnitResultArchiver(testResults: String, healthScaleFactor?: double, keepLongStdio?: boolean, testDataPublishers?: java.lang.UnsupportedOperationException: do not know how to categorize attributes of type ? extends hudson.tasks.junit.TestDataPublisher[]) | Mailer(recipients: String, notifyEveryUnstableBuild: boolean, sendToIndividuals: boolean)}): java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:264)
+	at org.jenkinsci.plugins.workflow.steps.StepDescriptor.newInstance(StepDescriptor.java:201)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeStep(DSL.java:205)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:353)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)
+	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)
+	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)
+	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)
+	... 34 more
+Caused by: java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:254)
+	at org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable.instantiate(UninstantiatedDescribable.java:175)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.coerce(DescribableModel.java:372)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.buildArguments(DescribableModel.java:318)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:259)
+	... 57 more
+Finished: FAILURE
+
+------
+
+Expected: is <SUCCESS>
+     but: was <FAILURE>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.jvnet.hudson.test.JenkinsRule.assertBuildStatus(JenkinsRule.java:1188)
+	at org.jvnet.hudson.test.JenkinsRule.assertBuildStatus(JenkinsRule.java:1194)
+	at org.jvnet.hudson.test.JenkinsRule.assertBuildStatusSuccess(JenkinsRule.java:1223)
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testScriptedPipeline(HelloWorldBuilderTest.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]></failure>
+    <system-out><![CDATA[=== Starting testScriptedPipeline(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+    <system-err><![CDATA[   0.010 [id=201]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:50044/jenkins/
+   0.022 [id=207]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.024 [id=207]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.114 [id=214]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.115 [id=209]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.116 [id=212]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.405 [id=212]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.423 [id=207]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 50045
+   0.424 [id=211]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   2.259 [id=43]	INFO	o.j.h.test.SimpleCommandLauncher#launch: agent launched for slave0
+   3.734 [id=240]	INFO	o.j.p.workflow.job.WorkflowRun#finish: test-scripted-pipeline #1 completed: FAILURE
+   4.258 [id=201]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   4.262 [id=201]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   4.262 [id=201]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   4.262 [id=201]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   4.269 [id=253]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #6 from /192.168.11.216:50304
+   4.270 [id=201]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   4.270 [id=201]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   4.272 [id=201]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   4.272 [id=201]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    <rerunFailure message="unexpected build status; build log was:&#10;------&#10;Started&#10;[Pipeline] node&#10;Running on master in /var/folders/57/4wzjgqfx2vs3dwmwg_dzf27w0000gn/T/jenkinsTests.tmp/jenkins2922508572262428418test/workspace/test-scripted-pipeline&#10;[Pipeline] {&#10;[Pipeline] step&#10;[Pipeline] }&#10;[Pipeline] // node&#10;[Pipeline] End of Pipeline&#10;java.lang.IllegalArgumentException: Failed to prepare greet step&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:355)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;	at java.lang.reflect.Method.invoke(Method.java:497)&#10;	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)&#10;	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)&#10;	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)&#10;	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)&#10;	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)&#10;	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)&#10;	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)&#10;	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)&#10;	at WorkflowScript.run(WorkflowScript:2)&#10;	at ___cps.transform___(Native Method)&#10;	at com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:57)&#10;	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:109)&#10;	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:82)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;	at java.lang.reflect.Method.invoke(Method.java:497)&#10;	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)&#10;	at com.cloudbees.groovy.cps.impl.ConstantBlock.eval(ConstantBlock.java:21)&#10;	at com.cloudbees.groovy.cps.Next.step(Next.java:83)&#10;	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:173)&#10;	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:162)&#10;	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:122)&#10;	at org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:261)&#10;	at com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:162)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$001(SandboxContinuable.java:19)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:35)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:32)&#10;	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.GroovySandbox.runInSandbox(GroovySandbox.java:108)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:32)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:174)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:330)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.access$100(CpsThreadGroup.java:82)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:242)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:230)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$2.call(CpsVmExecutorService.java:64)&#10;	at java.util.concurrent.FutureTask.run(FutureTask.java:266)&#10;	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:112)&#10;	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)&#10;	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)&#10;	at java.util.concurrent.FutureTask.run(FutureTask.java:266)&#10;	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)&#10;	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)&#10;	at java.lang.Thread.run(Thread.java:745)&#10;Caused by: java.lang.IllegalArgumentException: Could not instantiate {delegate=@greet(&lt;anonymous&gt;=Bobby)} for CoreStep(delegate: SimpleBuildStep{ArtifactArchiver(artifacts: String, allowEmptyArchive?: boolean, caseSensitive?: boolean, defaultExcludes?: boolean, excludes?: String, fingerprint?: boolean, onlyIfSuccessful?: boolean) | Fingerprinter(targets: String) | HelloWorldBuilder(name: String, cloudformationtemplate: String, stackname: String, keyname: String, keyvaluepairs: String, useFrench?: boolean) | JUnitResultArchiver(testResults: String, healthScaleFactor?: double, keepLongStdio?: boolean, testDataPublishers?: java.lang.UnsupportedOperationException: do not know how to categorize attributes of type ? extends hudson.tasks.junit.TestDataPublisher[]) | Mailer(recipients: String, notifyEveryUnstableBuild: boolean, sendToIndividuals: boolean)}): java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:264)&#10;	at org.jenkinsci.plugins.workflow.steps.StepDescriptor.newInstance(StepDescriptor.java:201)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeStep(DSL.java:205)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:353)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;	at java.lang.reflect.Method.invoke(Method.java:497)&#10;	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)&#10;	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)&#10;	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)&#10;	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)&#10;	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)&#10;	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)&#10;	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)&#10;	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)&#10;	... 34 more&#10;Caused by: java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:254)&#10;	at org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable.instantiate(UninstantiatedDescribable.java:175)&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.coerce(DescribableModel.java:372)&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.buildArguments(DescribableModel.java:318)&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:259)&#10;	... 57 more&#10;Finished: FAILURE&#10;&#10;------&#10;&#10;Expected: is &lt;SUCCESS&gt;&#10;     but: was &lt;FAILURE&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+unexpected build status; build log was:
+------
+Started
+[Pipeline] node
+Running on master in /var/folders/57/4wzjgqfx2vs3dwmwg_dzf27w0000gn/T/jenkinsTests.tmp/jenkins2922508572262428418test/workspace/test-scripted-pipeline
+[Pipeline] {
+[Pipeline] step
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+java.lang.IllegalArgumentException: Failed to prepare greet step
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:355)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)
+	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)
+	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)
+	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)
+	at WorkflowScript.run(WorkflowScript:2)
+	at ___cps.transform___(Native Method)
+	at com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:57)
+	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:109)
+	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)
+	at com.cloudbees.groovy.cps.impl.ConstantBlock.eval(ConstantBlock.java:21)
+	at com.cloudbees.groovy.cps.Next.step(Next.java:83)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:173)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:162)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:122)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:261)
+	at com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:162)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$001(SandboxContinuable.java:19)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:35)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:32)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.GroovySandbox.runInSandbox(GroovySandbox.java:108)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:32)
+	at org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:174)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:330)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.access$100(CpsThreadGroup.java:82)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:242)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:230)
+	at org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$2.call(CpsVmExecutorService.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:112)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: Could not instantiate {delegate=@greet(<anonymous>=Bobby)} for CoreStep(delegate: SimpleBuildStep{ArtifactArchiver(artifacts: String, allowEmptyArchive?: boolean, caseSensitive?: boolean, defaultExcludes?: boolean, excludes?: String, fingerprint?: boolean, onlyIfSuccessful?: boolean) | Fingerprinter(targets: String) | HelloWorldBuilder(name: String, cloudformationtemplate: String, stackname: String, keyname: String, keyvaluepairs: String, useFrench?: boolean) | JUnitResultArchiver(testResults: String, healthScaleFactor?: double, keepLongStdio?: boolean, testDataPublishers?: java.lang.UnsupportedOperationException: do not know how to categorize attributes of type ? extends hudson.tasks.junit.TestDataPublisher[]) | Mailer(recipients: String, notifyEveryUnstableBuild: boolean, sendToIndividuals: boolean)}): java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:264)
+	at org.jenkinsci.plugins.workflow.steps.StepDescriptor.newInstance(StepDescriptor.java:201)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeStep(DSL.java:205)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:353)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)
+	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)
+	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)
+	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)
+	... 34 more
+Caused by: java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:254)
+	at org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable.instantiate(UninstantiatedDescribable.java:175)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.coerce(DescribableModel.java:372)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.buildArguments(DescribableModel.java:318)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:259)
+	... 57 more
+Finished: FAILURE
+
+------
+
+Expected: is <SUCCESS>
+     but: was <FAILURE>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.jvnet.hudson.test.JenkinsRule.assertBuildStatus(JenkinsRule.java:1188)
+	at org.jvnet.hudson.test.JenkinsRule.assertBuildStatus(JenkinsRule.java:1194)
+	at org.jvnet.hudson.test.JenkinsRule.assertBuildStatusSuccess(JenkinsRule.java:1223)
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testScriptedPipeline(HelloWorldBuilderTest.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testScriptedPipeline(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.010 [id=390]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:50642/jenkins/
+   0.022 [id=396]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.024 [id=402]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.096 [id=398]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.096 [id=403]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.097 [id=403]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   1.072 [id=396]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   1.090 [id=396]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 50707
+   1.090 [id=396]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   2.316 [id=240]	INFO	o.j.h.test.SimpleCommandLauncher#launch: agent launched for slave0
+   2.476 [id=237]	INFO	o.j.p.workflow.job.WorkflowRun#finish: test-scripted-pipeline #1 completed: FAILURE
+   3.370 [id=390]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   3.377 [id=390]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   3.377 [id=390]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   3.377 [id=390]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   3.385 [id=439]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #11 from /192.168.11.216:50837
+   3.389 [id=390]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   3.389 [id=390]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   3.390 [id=390]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   3.390 [id=390]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunFailure>
+    <rerunFailure message="unexpected build status; build log was:&#10;------&#10;Started&#10;[Pipeline] node&#10;Running on master in /var/folders/57/4wzjgqfx2vs3dwmwg_dzf27w0000gn/T/jenkinsTests.tmp/jenkins2655637715043309247test/workspace/test-scripted-pipeline&#10;[Pipeline] {&#10;[Pipeline] step&#10;[Pipeline] }&#10;[Pipeline] // node&#10;[Pipeline] End of Pipeline&#10;java.lang.IllegalArgumentException: Failed to prepare greet step&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:355)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;	at java.lang.reflect.Method.invoke(Method.java:497)&#10;	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)&#10;	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)&#10;	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)&#10;	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)&#10;	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)&#10;	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)&#10;	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)&#10;	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)&#10;	at WorkflowScript.run(WorkflowScript:2)&#10;	at ___cps.transform___(Native Method)&#10;	at com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:57)&#10;	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:109)&#10;	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:82)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;	at java.lang.reflect.Method.invoke(Method.java:497)&#10;	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)&#10;	at com.cloudbees.groovy.cps.impl.ConstantBlock.eval(ConstantBlock.java:21)&#10;	at com.cloudbees.groovy.cps.Next.step(Next.java:83)&#10;	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:173)&#10;	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:162)&#10;	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:122)&#10;	at org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:261)&#10;	at com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:162)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$001(SandboxContinuable.java:19)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:35)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:32)&#10;	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.GroovySandbox.runInSandbox(GroovySandbox.java:108)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:32)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:174)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:330)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.access$100(CpsThreadGroup.java:82)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:242)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:230)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$2.call(CpsVmExecutorService.java:64)&#10;	at java.util.concurrent.FutureTask.run(FutureTask.java:266)&#10;	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:112)&#10;	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)&#10;	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)&#10;	at java.util.concurrent.FutureTask.run(FutureTask.java:266)&#10;	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)&#10;	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)&#10;	at java.lang.Thread.run(Thread.java:745)&#10;Caused by: java.lang.IllegalArgumentException: Could not instantiate {delegate=@greet(&lt;anonymous&gt;=Bobby)} for CoreStep(delegate: SimpleBuildStep{ArtifactArchiver(artifacts: String, allowEmptyArchive?: boolean, caseSensitive?: boolean, defaultExcludes?: boolean, excludes?: String, fingerprint?: boolean, onlyIfSuccessful?: boolean) | Fingerprinter(targets: String) | HelloWorldBuilder(name: String, cloudformationtemplate: String, stackname: String, keyname: String, keyvaluepairs: String, useFrench?: boolean) | JUnitResultArchiver(testResults: String, healthScaleFactor?: double, keepLongStdio?: boolean, testDataPublishers?: java.lang.UnsupportedOperationException: do not know how to categorize attributes of type ? extends hudson.tasks.junit.TestDataPublisher[]) | Mailer(recipients: String, notifyEveryUnstableBuild: boolean, sendToIndividuals: boolean)}): java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:264)&#10;	at org.jenkinsci.plugins.workflow.steps.StepDescriptor.newInstance(StepDescriptor.java:201)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeStep(DSL.java:205)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:353)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;	at java.lang.reflect.Method.invoke(Method.java:497)&#10;	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)&#10;	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)&#10;	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)&#10;	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)&#10;	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)&#10;	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)&#10;	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)&#10;	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)&#10;	... 34 more&#10;Caused by: java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:254)&#10;	at org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable.instantiate(UninstantiatedDescribable.java:175)&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.coerce(DescribableModel.java:372)&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.buildArguments(DescribableModel.java:318)&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:259)&#10;	... 57 more&#10;Finished: FAILURE&#10;&#10;------&#10;&#10;Expected: is &lt;SUCCESS&gt;&#10;     but: was &lt;FAILURE&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+unexpected build status; build log was:
+------
+Started
+[Pipeline] node
+Running on master in /var/folders/57/4wzjgqfx2vs3dwmwg_dzf27w0000gn/T/jenkinsTests.tmp/jenkins2655637715043309247test/workspace/test-scripted-pipeline
+[Pipeline] {
+[Pipeline] step
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+java.lang.IllegalArgumentException: Failed to prepare greet step
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:355)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)
+	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)
+	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)
+	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)
+	at WorkflowScript.run(WorkflowScript:2)
+	at ___cps.transform___(Native Method)
+	at com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:57)
+	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:109)
+	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)
+	at com.cloudbees.groovy.cps.impl.ConstantBlock.eval(ConstantBlock.java:21)
+	at com.cloudbees.groovy.cps.Next.step(Next.java:83)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:173)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:162)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:122)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:261)
+	at com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:162)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$001(SandboxContinuable.java:19)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:35)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:32)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.GroovySandbox.runInSandbox(GroovySandbox.java:108)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:32)
+	at org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:174)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:330)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.access$100(CpsThreadGroup.java:82)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:242)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:230)
+	at org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$2.call(CpsVmExecutorService.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:112)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: Could not instantiate {delegate=@greet(<anonymous>=Bobby)} for CoreStep(delegate: SimpleBuildStep{ArtifactArchiver(artifacts: String, allowEmptyArchive?: boolean, caseSensitive?: boolean, defaultExcludes?: boolean, excludes?: String, fingerprint?: boolean, onlyIfSuccessful?: boolean) | Fingerprinter(targets: String) | HelloWorldBuilder(name: String, cloudformationtemplate: String, stackname: String, keyname: String, keyvaluepairs: String, useFrench?: boolean) | JUnitResultArchiver(testResults: String, healthScaleFactor?: double, keepLongStdio?: boolean, testDataPublishers?: java.lang.UnsupportedOperationException: do not know how to categorize attributes of type ? extends hudson.tasks.junit.TestDataPublisher[]) | Mailer(recipients: String, notifyEveryUnstableBuild: boolean, sendToIndividuals: boolean)}): java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:264)
+	at org.jenkinsci.plugins.workflow.steps.StepDescriptor.newInstance(StepDescriptor.java:201)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeStep(DSL.java:205)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:353)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)
+	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)
+	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)
+	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)
+	... 34 more
+Caused by: java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:254)
+	at org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable.instantiate(UninstantiatedDescribable.java:175)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.coerce(DescribableModel.java:372)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.buildArguments(DescribableModel.java:318)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:259)
+	... 57 more
+Finished: FAILURE
+
+------
+
+Expected: is <SUCCESS>
+     but: was <FAILURE>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.jvnet.hudson.test.JenkinsRule.assertBuildStatus(JenkinsRule.java:1188)
+	at org.jvnet.hudson.test.JenkinsRule.assertBuildStatus(JenkinsRule.java:1194)
+	at org.jvnet.hudson.test.JenkinsRule.assertBuildStatusSuccess(JenkinsRule.java:1223)
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testScriptedPipeline(HelloWorldBuilderTest.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testScriptedPipeline(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.008 [id=473]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:50906/jenkins/
+   0.019 [id=479]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.020 [id=479]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.101 [id=481]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.102 [id=486]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.102 [id=485]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.104 [id=485]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.575 [id=484]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 50971
+   0.575 [id=484]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   1.726 [id=240]	INFO	o.j.h.test.SimpleCommandLauncher#launch: agent launched for slave0
+   1.894 [id=237]	INFO	o.j.p.workflow.job.WorkflowRun#finish: test-scripted-pipeline #1 completed: FAILURE
+   2.775 [id=473]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   2.779 [id=473]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   2.780 [id=473]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   2.780 [id=473]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   2.785 [id=522]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #13 from /192.168.11.216:51103
+   2.785 [id=473]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   2.786 [id=473]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   2.788 [id=473]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   2.788 [id=473]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunFailure>
+    <rerunFailure message="unexpected build status; build log was:&#10;------&#10;Started&#10;[Pipeline] node&#10;Running on master in /var/folders/57/4wzjgqfx2vs3dwmwg_dzf27w0000gn/T/jenkinsTests.tmp/jenkins7570267202514112047test/workspace/test-scripted-pipeline&#10;[Pipeline] {&#10;[Pipeline] step&#10;[Pipeline] }&#10;[Pipeline] // node&#10;[Pipeline] End of Pipeline&#10;java.lang.IllegalArgumentException: Failed to prepare greet step&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:355)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;	at java.lang.reflect.Method.invoke(Method.java:497)&#10;	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)&#10;	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)&#10;	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)&#10;	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)&#10;	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)&#10;	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)&#10;	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)&#10;	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)&#10;	at WorkflowScript.run(WorkflowScript:2)&#10;	at ___cps.transform___(Native Method)&#10;	at com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:57)&#10;	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:109)&#10;	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:82)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;	at java.lang.reflect.Method.invoke(Method.java:497)&#10;	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)&#10;	at com.cloudbees.groovy.cps.impl.ConstantBlock.eval(ConstantBlock.java:21)&#10;	at com.cloudbees.groovy.cps.Next.step(Next.java:83)&#10;	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:173)&#10;	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:162)&#10;	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:122)&#10;	at org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:261)&#10;	at com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:162)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$001(SandboxContinuable.java:19)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:35)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:32)&#10;	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.GroovySandbox.runInSandbox(GroovySandbox.java:108)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:32)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:174)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:330)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.access$100(CpsThreadGroup.java:82)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:242)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:230)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$2.call(CpsVmExecutorService.java:64)&#10;	at java.util.concurrent.FutureTask.run(FutureTask.java:266)&#10;	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:112)&#10;	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)&#10;	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)&#10;	at java.util.concurrent.FutureTask.run(FutureTask.java:266)&#10;	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)&#10;	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)&#10;	at java.lang.Thread.run(Thread.java:745)&#10;Caused by: java.lang.IllegalArgumentException: Could not instantiate {delegate=@greet(&lt;anonymous&gt;=Bobby)} for CoreStep(delegate: SimpleBuildStep{ArtifactArchiver(artifacts: String, allowEmptyArchive?: boolean, caseSensitive?: boolean, defaultExcludes?: boolean, excludes?: String, fingerprint?: boolean, onlyIfSuccessful?: boolean) | Fingerprinter(targets: String) | HelloWorldBuilder(name: String, cloudformationtemplate: String, stackname: String, keyname: String, keyvaluepairs: String, useFrench?: boolean) | JUnitResultArchiver(testResults: String, healthScaleFactor?: double, keepLongStdio?: boolean, testDataPublishers?: java.lang.UnsupportedOperationException: do not know how to categorize attributes of type ? extends hudson.tasks.junit.TestDataPublisher[]) | Mailer(recipients: String, notifyEveryUnstableBuild: boolean, sendToIndividuals: boolean)}): java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:264)&#10;	at org.jenkinsci.plugins.workflow.steps.StepDescriptor.newInstance(StepDescriptor.java:201)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeStep(DSL.java:205)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:353)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;	at java.lang.reflect.Method.invoke(Method.java:497)&#10;	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)&#10;	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)&#10;	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)&#10;	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)&#10;	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)&#10;	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)&#10;	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)&#10;	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)&#10;	... 34 more&#10;Caused by: java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:254)&#10;	at org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable.instantiate(UninstantiatedDescribable.java:175)&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.coerce(DescribableModel.java:372)&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.buildArguments(DescribableModel.java:318)&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:259)&#10;	... 57 more&#10;Finished: FAILURE&#10;&#10;------&#10;&#10;Expected: is &lt;SUCCESS&gt;&#10;     but: was &lt;FAILURE&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+unexpected build status; build log was:
+------
+Started
+[Pipeline] node
+Running on master in /var/folders/57/4wzjgqfx2vs3dwmwg_dzf27w0000gn/T/jenkinsTests.tmp/jenkins7570267202514112047test/workspace/test-scripted-pipeline
+[Pipeline] {
+[Pipeline] step
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+java.lang.IllegalArgumentException: Failed to prepare greet step
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:355)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)
+	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)
+	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)
+	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)
+	at WorkflowScript.run(WorkflowScript:2)
+	at ___cps.transform___(Native Method)
+	at com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:57)
+	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:109)
+	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)
+	at com.cloudbees.groovy.cps.impl.ConstantBlock.eval(ConstantBlock.java:21)
+	at com.cloudbees.groovy.cps.Next.step(Next.java:83)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:173)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:162)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:122)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:261)
+	at com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:162)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$001(SandboxContinuable.java:19)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:35)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:32)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.GroovySandbox.runInSandbox(GroovySandbox.java:108)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:32)
+	at org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:174)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:330)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.access$100(CpsThreadGroup.java:82)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:242)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:230)
+	at org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$2.call(CpsVmExecutorService.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:112)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: Could not instantiate {delegate=@greet(<anonymous>=Bobby)} for CoreStep(delegate: SimpleBuildStep{ArtifactArchiver(artifacts: String, allowEmptyArchive?: boolean, caseSensitive?: boolean, defaultExcludes?: boolean, excludes?: String, fingerprint?: boolean, onlyIfSuccessful?: boolean) | Fingerprinter(targets: String) | HelloWorldBuilder(name: String, cloudformationtemplate: String, stackname: String, keyname: String, keyvaluepairs: String, useFrench?: boolean) | JUnitResultArchiver(testResults: String, healthScaleFactor?: double, keepLongStdio?: boolean, testDataPublishers?: java.lang.UnsupportedOperationException: do not know how to categorize attributes of type ? extends hudson.tasks.junit.TestDataPublisher[]) | Mailer(recipients: String, notifyEveryUnstableBuild: boolean, sendToIndividuals: boolean)}): java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:264)
+	at org.jenkinsci.plugins.workflow.steps.StepDescriptor.newInstance(StepDescriptor.java:201)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeStep(DSL.java:205)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:353)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)
+	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)
+	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)
+	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)
+	... 34 more
+Caused by: java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:254)
+	at org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable.instantiate(UninstantiatedDescribable.java:175)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.coerce(DescribableModel.java:372)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.buildArguments(DescribableModel.java:318)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:259)
+	... 57 more
+Finished: FAILURE
+
+------
+
+Expected: is <SUCCESS>
+     but: was <FAILURE>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.jvnet.hudson.test.JenkinsRule.assertBuildStatus(JenkinsRule.java:1188)
+	at org.jvnet.hudson.test.JenkinsRule.assertBuildStatus(JenkinsRule.java:1194)
+	at org.jvnet.hudson.test.JenkinsRule.assertBuildStatusSuccess(JenkinsRule.java:1223)
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testScriptedPipeline(HelloWorldBuilderTest.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testScriptedPipeline(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.008 [id=691]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51319/jenkins/
+   0.017 [id=697]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.018 [id=704]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.084 [id=700]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.085 [id=700]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.087 [id=699]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.475 [id=699]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.491 [id=703]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51384
+   0.492 [id=703]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   1.604 [id=240]	INFO	o.j.h.test.SimpleCommandLauncher#launch: agent launched for slave0
+   1.755 [id=237]	INFO	o.j.p.workflow.job.WorkflowRun#finish: test-scripted-pipeline #1 completed: FAILURE
+   2.660 [id=691]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   2.663 [id=691]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   2.663 [id=691]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   2.663 [id=691]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   2.666 [id=740]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #19 from /192.168.11.216:51525
+   2.667 [id=691]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   2.667 [id=691]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   2.668 [id=691]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   2.668 [id=691]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunFailure>
+    <rerunFailure message="unexpected build status; build log was:&#10;------&#10;Started&#10;[Pipeline] node&#10;Running on master in /var/folders/57/4wzjgqfx2vs3dwmwg_dzf27w0000gn/T/jenkinsTests.tmp/jenkins1095772674192928250test/workspace/test-scripted-pipeline&#10;[Pipeline] {&#10;[Pipeline] step&#10;[Pipeline] }&#10;[Pipeline] // node&#10;[Pipeline] End of Pipeline&#10;java.lang.IllegalArgumentException: Failed to prepare greet step&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:355)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;	at java.lang.reflect.Method.invoke(Method.java:497)&#10;	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)&#10;	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)&#10;	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)&#10;	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)&#10;	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)&#10;	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)&#10;	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)&#10;	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)&#10;	at WorkflowScript.run(WorkflowScript:2)&#10;	at ___cps.transform___(Native Method)&#10;	at com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:57)&#10;	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:109)&#10;	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:82)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;	at java.lang.reflect.Method.invoke(Method.java:497)&#10;	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)&#10;	at com.cloudbees.groovy.cps.impl.ConstantBlock.eval(ConstantBlock.java:21)&#10;	at com.cloudbees.groovy.cps.Next.step(Next.java:83)&#10;	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:173)&#10;	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:162)&#10;	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:122)&#10;	at org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:261)&#10;	at com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:162)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$001(SandboxContinuable.java:19)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:35)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:32)&#10;	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.GroovySandbox.runInSandbox(GroovySandbox.java:108)&#10;	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:32)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:174)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:330)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.access$100(CpsThreadGroup.java:82)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:242)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:230)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$2.call(CpsVmExecutorService.java:64)&#10;	at java.util.concurrent.FutureTask.run(FutureTask.java:266)&#10;	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:112)&#10;	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)&#10;	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)&#10;	at java.util.concurrent.FutureTask.run(FutureTask.java:266)&#10;	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)&#10;	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)&#10;	at java.lang.Thread.run(Thread.java:745)&#10;Caused by: java.lang.IllegalArgumentException: Could not instantiate {delegate=@greet(&lt;anonymous&gt;=Bobby)} for CoreStep(delegate: SimpleBuildStep{ArtifactArchiver(artifacts: String, allowEmptyArchive?: boolean, caseSensitive?: boolean, defaultExcludes?: boolean, excludes?: String, fingerprint?: boolean, onlyIfSuccessful?: boolean) | Fingerprinter(targets: String) | HelloWorldBuilder(name: String, cloudformationtemplate: String, stackname: String, keyname: String, keyvaluepairs: String, useFrench?: boolean) | JUnitResultArchiver(testResults: String, healthScaleFactor?: double, keepLongStdio?: boolean, testDataPublishers?: java.lang.UnsupportedOperationException: do not know how to categorize attributes of type ? extends hudson.tasks.junit.TestDataPublisher[]) | Mailer(recipients: String, notifyEveryUnstableBuild: boolean, sendToIndividuals: boolean)}): java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:264)&#10;	at org.jenkinsci.plugins.workflow.steps.StepDescriptor.newInstance(StepDescriptor.java:201)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeStep(DSL.java:205)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:353)&#10;	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)&#10;	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#10;	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#10;	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#10;	at java.lang.reflect.Method.invoke(Method.java:497)&#10;	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)&#10;	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)&#10;	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)&#10;	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)&#10;	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)&#10;	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)&#10;	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)&#10;	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)&#10;	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)&#10;	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)&#10;	... 34 more&#10;Caused by: java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:254)&#10;	at org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable.instantiate(UninstantiatedDescribable.java:175)&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.coerce(DescribableModel.java:372)&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.buildArguments(DescribableModel.java:318)&#10;	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:259)&#10;	... 57 more&#10;Finished: FAILURE&#10;&#10;------&#10;&#10;Expected: is &lt;SUCCESS&gt;&#10;     but: was &lt;FAILURE&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+unexpected build status; build log was:
+------
+Started
+[Pipeline] node
+Running on master in /var/folders/57/4wzjgqfx2vs3dwmwg_dzf27w0000gn/T/jenkinsTests.tmp/jenkins1095772674192928250test/workspace/test-scripted-pipeline
+[Pipeline] {
+[Pipeline] step
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+java.lang.IllegalArgumentException: Failed to prepare greet step
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:355)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)
+	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)
+	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)
+	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)
+	at WorkflowScript.run(WorkflowScript:2)
+	at ___cps.transform___(Native Method)
+	at com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:57)
+	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:109)
+	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:82)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)
+	at com.cloudbees.groovy.cps.impl.ConstantBlock.eval(ConstantBlock.java:21)
+	at com.cloudbees.groovy.cps.Next.step(Next.java:83)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:173)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:162)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:122)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:261)
+	at com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:162)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$001(SandboxContinuable.java:19)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:35)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable$1.call(SandboxContinuable.java:32)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.GroovySandbox.runInSandbox(GroovySandbox.java:108)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:32)
+	at org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:174)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:330)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.access$100(CpsThreadGroup.java:82)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:242)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:230)
+	at org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$2.call(CpsVmExecutorService.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:112)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: Could not instantiate {delegate=@greet(<anonymous>=Bobby)} for CoreStep(delegate: SimpleBuildStep{ArtifactArchiver(artifacts: String, allowEmptyArchive?: boolean, caseSensitive?: boolean, defaultExcludes?: boolean, excludes?: String, fingerprint?: boolean, onlyIfSuccessful?: boolean) | Fingerprinter(targets: String) | HelloWorldBuilder(name: String, cloudformationtemplate: String, stackname: String, keyname: String, keyvaluepairs: String, useFrench?: boolean) | JUnitResultArchiver(testResults: String, healthScaleFactor?: double, keepLongStdio?: boolean, testDataPublishers?: java.lang.UnsupportedOperationException: do not know how to categorize attributes of type ? extends hudson.tasks.junit.TestDataPublisher[]) | Mailer(recipients: String, notifyEveryUnstableBuild: boolean, sendToIndividuals: boolean)}): java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:264)
+	at org.jenkinsci.plugins.workflow.steps.StepDescriptor.newInstance(StepDescriptor.java:201)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeStep(DSL.java:205)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeDescribable(DSL.java:353)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:153)
+	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1215)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1024)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:42)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:155)
+	at org.kohsuke.groovy.sandbox.GroovyInterceptor.onMethodCall(GroovyInterceptor.java:23)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.SandboxInterceptor.onMethodCall(SandboxInterceptor.java:123)
+	at org.kohsuke.groovy.sandbox.impl.Checker$1.call(Checker.java:153)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:157)
+	at org.kohsuke.groovy.sandbox.impl.Checker.checkedCall(Checker.java:127)
+	at com.cloudbees.groovy.cps.sandbox.SandboxInvoker.methodCall(SandboxInvoker.java:17)
+	... 34 more
+Caused by: java.lang.IllegalArgumentException: Arguments to class io.jenkins.plugins.sample.HelloWorldBuilder have to be explicitly named
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:254)
+	at org.jenkinsci.plugins.structs.describable.UninstantiatedDescribable.instantiate(UninstantiatedDescribable.java:175)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.coerce(DescribableModel.java:372)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.buildArguments(DescribableModel.java:318)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.instantiate(DescribableModel.java:259)
+	... 57 more
+Finished: FAILURE
+
+------
+
+Expected: is <SUCCESS>
+     but: was <FAILURE>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.jvnet.hudson.test.JenkinsRule.assertBuildStatus(JenkinsRule.java:1188)
+	at org.jvnet.hudson.test.JenkinsRule.assertBuildStatus(JenkinsRule.java:1194)
+	at org.jvnet.hudson.test.JenkinsRule.assertBuildStatusSuccess(JenkinsRule.java:1223)
+	at io.jenkins.plugins.sample.HelloWorldBuilderTest.testScriptedPipeline(HelloWorldBuilderTest.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.jvnet.hudson.test.JenkinsRule$1.evaluate(JenkinsRule.java:548)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:298)
+	at org.junit.internal.runners.statements.FailOnTimeout$CallableStatement.call(FailOnTimeout.java:292)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:745)
+]]>
+      <system-out><![CDATA[=== Starting testScriptedPipeline(io.jenkins.plugins.sample.HelloWorldBuilderTest)
+]]></system-out>
+      <system-err><![CDATA[   0.005 [id=945]	INFO	o.jvnet.hudson.test.JenkinsRule#createWebServer: Running on http://localhost:51807/jenkins/
+   0.013 [id=951]	INFO	jenkins.InitReactorRunner$1#onAttained: Started initialization
+   0.013 [id=955]	INFO	jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+   0.064 [id=956]	INFO	jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+   0.065 [id=953]	INFO	jenkins.InitReactorRunner$1#onAttained: Started all plugins
+   0.065 [id=958]	INFO	jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+   0.586 [id=952]	INFO	jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+   0.604 [id=956]	INFO	o.j.main.modules.sshd.SSHD#start: Started SSHD at port 51872
+   0.604 [id=956]	INFO	jenkins.InitReactorRunner$1#onAttained: Completed initialization
+   1.943 [id=240]	INFO	o.j.h.test.SimpleCommandLauncher#launch: agent launched for slave0
+   2.089 [id=239]	INFO	o.j.p.workflow.job.WorkflowRun#finish: test-scripted-pipeline #1 completed: FAILURE
+   2.989 [id=945]	INFO	jenkins.model.Jenkins#cleanUp: Stopping Jenkins
+   2.993 [id=945]	INFO	jenkins.model.Jenkins$21#onAttained: Started termination
+   2.993 [id=945]	INFO	jenkins.model.Jenkins$21#onAttained: Completed termination
+   2.993 [id=945]	INFO	jenkins.model.Jenkins#_cleanUpDisconnectComputers: Starting node disconnection
+   3.000 [id=994]	INFO	h.TcpSlaveAgentListener$ConnectionHandler#run: Accepted connection #26 from /192.168.11.216:52003
+   3.001 [id=945]	INFO	jenkins.model.Jenkins#_cleanUpShutdownPluginManager: Stopping plugin manager
+   3.001 [id=945]	INFO	jenkins.model.Jenkins#_cleanUpPersistQueue: Persisting build queue
+   3.003 [id=945]	INFO	jenkins.model.Jenkins#_cleanUpAwaitDisconnects: Waiting for node disconnection completion
+   3.003 [id=945]	INFO	jenkins.model.Jenkins#cleanUp: Jenkins stopped
+]]></system-err>
+    </rerunFailure>
+  </testcase>
 </testsuite>
