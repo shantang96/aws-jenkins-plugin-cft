@@ -1,6 +1,19 @@
 <?jelly escape-by-default='true'?>
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+    <img src="https://www.cloudbees.com/sites/default/files/newtglobal_logo_0_0.png"/>
     <f:entry title="${%Name}" field="name">
+        <f:textbox />
+    </f:entry>
+    <f:entry title="${%CloudFormationTemplate}" field="cloudformationtemplate">
+        <f:textbox />
+    </f:entry>
+    <f:entry title="${%StackName}" field="stackname">
+        <f:textbox />
+    </f:entry>
+    <f:entry title="${%KeyName}" field="keyname">
+        <f:textbox />
+    </f:entry>
+     <f:entry title="${%KeyValuePairs}" field="keyvaluepairs">
         <f:textbox />
     </f:entry>
     <f:advanced>

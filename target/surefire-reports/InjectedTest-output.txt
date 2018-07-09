@@ -1,0 +1,79 @@
+Running tests for io.jenkins.plugins:latest-cft-demo:1.0-SNAPSHOT
+Jul 09, 2018 10:07:55 AM org.eclipse.jetty.util.log.Log initialized
+INFO: Logging initialized @422ms to org.eclipse.jetty.util.log.Slf4jLog
+Jul 09, 2018 10:07:56 AM org.jvnet.hudson.test.WarExploder explode
+INFO: Exploding /Users/ShantanuGupta/.m2/repository/org/jenkins-ci/main/jenkins-war/2.7.3/jenkins-war-2.7.3.war into /Users/ShantanuGupta/Downloads/tomcat-new/webapps/plugins/latest-cft-demo/target/jenkins-for-test
+Jul 09, 2018 10:07:59 AM org.eclipse.jetty.server.handler.ContextHandler setContextPath
+WARNING: Empty contextPath
+Jul 09, 2018 10:07:59 AM org.eclipse.jetty.server.Server doStart
+INFO: jetty-9.4.5.v20170502
+Jul 09, 2018 10:08:00 AM org.eclipse.jetty.webapp.StandardDescriptorProcessor visitServlet
+INFO: NO JSP Support for /, did not find org.eclipse.jetty.jsp.JettyJspServlet
+Jul 09, 2018 10:08:00 AM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: DefaultSessionIdManager workerName=node0
+Jul 09, 2018 10:08:00 AM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: No SessionScavenger set, using defaults
+Jul 09, 2018 10:08:00 AM org.eclipse.jetty.server.session.HouseKeeper startScavenging
+INFO: Scavenging every 600000ms
+Jul 09, 2018 10:08:00 AM org.eclipse.jetty.server.handler.ContextHandler doStart
+INFO: Started o.e.j.w.WebAppContext@6b5894c8{/,file:///Users/ShantanuGupta/Downloads/tomcat-new/webapps/plugins/latest-cft-demo/target/jenkins-for-test/,AVAILABLE}{/plugins/latest-cft-demo/target/jenkins-for-test}
+Jul 09, 2018 10:08:00 AM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@492dbb10{HTTP/1.1,[http/1.1]}{localhost:52514}
+Jul 09, 2018 10:08:00 AM org.eclipse.jetty.server.Server doStart
+INFO: Started @4726ms
+Jul 09, 2018 10:08:00 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Jul 09, 2018 10:08:01 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Jul 09, 2018 10:08:02 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Jul 09, 2018 10:08:03 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Jul 09, 2018 10:08:03 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Jul 09, 2018 10:08:04 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Jul 09, 2018 10:08:04 AM org.jenkinsci.main.modules.sshd.SSHD start
+INFO: Started SSHD at port 52772
+Jul 09, 2018 10:08:04 AM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Jul 09, 2018 10:08:04 AM org.eclipse.jetty.server.Server doStart
+INFO: jetty-9.4.5.v20170502
+Jul 09, 2018 10:08:04 AM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: DefaultSessionIdManager workerName=node0
+Jul 09, 2018 10:08:04 AM org.eclipse.jetty.server.session.DefaultSessionIdManager doStart
+INFO: No SessionScavenger set, using defaults
+Jul 09, 2018 10:08:04 AM org.eclipse.jetty.server.session.HouseKeeper startScavenging
+INFO: Scavenging every 600000ms
+Jul 09, 2018 10:08:04 AM org.eclipse.jetty.server.handler.ContextHandler doStart
+INFO: Started o.e.j.s.ServletContextHandler@3a7704c{/,null,AVAILABLE}
+Jul 09, 2018 10:08:04 AM org.eclipse.jetty.server.AbstractConnector doStart
+INFO: Started ServerConnector@a23a01d{HTTP/1.1,[http/1.1]}{0.0.0.0:52774}
+Jul 09, 2018 10:08:04 AM org.eclipse.jetty.server.Server doStart
+INFO: Started @9432ms
+Jul 09, 2018 10:08:06 AM org.eclipse.jetty.server.AbstractConnector doStop
+INFO: Stopped ServerConnector@492dbb10{HTTP/1.1,[http/1.1]}{localhost:0}
+Jul 09, 2018 10:08:06 AM org.eclipse.jetty.server.session.HouseKeeper stopScavenging
+INFO: Stopped scavenging
+Jul 09, 2018 10:08:06 AM org.eclipse.jetty.server.handler.ContextHandler doStop
+INFO: Stopped o.e.j.w.WebAppContext@6b5894c8{/,file:///Users/ShantanuGupta/Downloads/tomcat-new/webapps/plugins/latest-cft-demo/target/jenkins-for-test/,UNAVAILABLE}{/plugins/latest-cft-demo/target/jenkins-for-test}
+Jul 09, 2018 10:08:06 AM jenkins.model.Jenkins cleanUp
+INFO: Stopping Jenkins
+Jul 09, 2018 10:08:06 AM jenkins.model.Jenkins$21 onAttained
+INFO: Started termination
+Jul 09, 2018 10:08:06 AM jenkins.model.Jenkins$21 onAttained
+INFO: Completed termination
+Jul 09, 2018 10:08:06 AM jenkins.model.Jenkins _cleanUpDisconnectComputers
+INFO: Starting node disconnection
+Jul 09, 2018 10:08:06 AM hudson.TcpSlaveAgentListener$ConnectionHandler run
+INFO: Accepted connection #1 from /192.168.11.216:52905
+Jul 09, 2018 10:08:06 AM jenkins.model.Jenkins _cleanUpShutdownPluginManager
+INFO: Stopping plugin manager
+Jul 09, 2018 10:08:06 AM jenkins.model.Jenkins _cleanUpPersistQueue
+INFO: Persisting build queue
+Jul 09, 2018 10:08:06 AM jenkins.model.Jenkins _cleanUpAwaitDisconnects
+INFO: Waiting for node disconnection completion
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+Jul 09, 2018 10:08:06 AM jenkins.model.Jenkins cleanUp
+INFO: Jenkins stopped

@@ -13,7 +13,11 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <io.jenkins.plugins.sample.HelloWorldBuilder plugin="latest-cft-demo@1.0-SNAPSHOT">
-      <name>Shanu</name>
+      <name>Shantanu Gupta</name>
+      <cloudformationtemplate>/Users/ShantanuGupta/Downloads/tomcat-new/webapps/plugins/latest-cft-demo/CFTtemplate.json</cloudformationtemplate>
+      <stackname>myStack</stackname>
+      <keyname>myKey.pem</keyname>
+      <keyvaluepairs>id=1234 group=dev user=shantang email=shantang@usc.edu</keyvaluepairs>
       <useFrench>false</useFrench>
     </io.jenkins.plugins.sample.HelloWorldBuilder>
   </builders>

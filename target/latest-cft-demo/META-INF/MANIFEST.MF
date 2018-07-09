@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Built-By: ShantanuGupta
+Created-By: Apache Maven
+Build-Jdk: 1.8.0_65
+Extension-Name: latest-cft-demo
+Specification-Title: TODO
+Implementation-Title: latest-cft-demo
+Implementation-Version: 1.0-SNAPSHOT
+Group-Id: io.jenkins.plugins
+Short-Name: latest-cft-demo
+Long-Name: TODO Plugin
+Plugin-Version: 1.0-SNAPSHOT (private-dae91ccc-ShantanuGupta)
+Hudson-Version: 2.7.3
+Jenkins-Version: 2.7.3
+Plugin-Dependencies: structs:1.7
+Plugin-Developers: 
+
