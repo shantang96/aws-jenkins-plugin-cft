@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Group-Id: io.jenkins.plugins
 Short-Name: latest-cft-demo
 Long-Name: TODO Plugin
-Plugin-Version: 1.0-SNAPSHOT (private-2217d7ea-ShantanuGupta)
+Plugin-Version: 1.0-SNAPSHOT (private-e83f2849-ShantanuGupta)
 Hudson-Version: 2.7.3
 Jenkins-Version: 2.7.3
 Plugin-Dependencies: structs:1.7

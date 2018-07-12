@@ -10,7 +10,7 @@
     <f:entry title="${%StackName}" field="stackname">
         <f:textbox />
     </f:entry>
-    <f:entry title="${%KeyName}" field="keyname">
+    <f:entry title="${%Parameters}" field="parameters">
         <f:textbox />
     </f:entry>
      <f:entry title="${%KeyValuePairs}" field="keyvaluepairs">

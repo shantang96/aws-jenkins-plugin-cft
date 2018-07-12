@@ -20,12 +20,14 @@ import org.apache.commons.io.IOUtils;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundSetter;
 
+import java.lang.*;
+
 public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
 
     private final String name;
     public final String cloudformationtemplate;
     public final String stackname;
-    public final String keyname;
+    public final String parameters;
     public final String keyvaluepairs;
     private boolean useFrench;
 
@@ -35,12 +37,12 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
     }
     
     @DataBoundConstructor
-    public HelloWorldBuilder(String name, String cloudformationtemplate, String stackname, String keyname, String keyvaluepairs) {
+    public HelloWorldBuilder(String name, String cloudformationtemplate, String stackname, String parameters, String keyvaluepairs) {
 //     	System.out.println("GOT HERE - dataBoundConstructor() :" + cloudformationtemplate);
         this.name = name;
         this.cloudformationtemplate = cloudformationtemplate;
         this.stackname = stackname;
-        this.keyname = keyname;
+        this.parameters = parameters;
         this.keyvaluepairs = keyvaluepairs;
     }
 
@@ -83,22 +85,29 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
     		String executeStr = "pwd"; //temporarily.
          	String CFTFilePath = cloudformationtemplate;
    			String stackName = stackname;
-   			String keyName = keyname;
+   			String parametersPairs = parameters;
    			String keyValuePairs= keyvaluepairs; //Should be in the form k1=v1 k2=v2 k3=v3 (separated by spaces)
 
             listener.getLogger().println("Cloud Formation Template File Path = " + CFTFilePath);
             listener.getLogger().println("Stack Name = " + stackName);
-            listener.getLogger().println("Key Name = " + keyName);
+            listener.getLogger().println("Parameters = " + parametersPairs);
             listener.getLogger().println("Key Value Pairs = " + keyValuePairs);
-			String executeStrX = "aws cloudformation deploy --template-file " + CFTFilePath +  " --stack-name " + stackName + " --parameter-overrides KeyName=" + keyName + " --tags " + keyValuePairs;
+			String executeStrX = "aws cloudformation deploy --template-file " + CFTFilePath +  " --stack-name " + stackName + " --parameter-overrides " + parametersPairs + " --tags " + keyValuePairs + " --no-execute-changeset";
 
 			listener.getLogger().println("");
 			listener.getLogger().println("Executing Command  = " + executeStrX);
 
     		try {
-    			ProcessBuilder pb = new ProcessBuilder(executeStrX);
-    			String output = IOUtils.toString(pb.start().getInputStream());
-    			listener.getLogger().println(output);
+//     			ProcessBuilder pb = new ProcessBuilder("aws", "cloudformation", "deploy", "--template-file", CFTFilePath, "--stack-name", stackName, "--parameters-overrides", parametersPairs, "--tags", keyValuePairs, "--no-execute-changeset");
+//     			Process p = pb.start();
+				Process p = Runtime.getRuntime().exec(executeStrX);
+    			listener.getLogger().println("\nExecuting.............");
+    			//Thread.sleep(10000);
+    			p.waitFor();
+    			String output = IOUtils.toString(p.getInputStream());
+    			String errorStream = IOUtils.toString(p.getErrorStream());
+    			listener.getLogger().println("Output:\n" + output);
+    			listener.getLogger().println("Errors:\n" + errorStream);
 
     		} catch (IOException e) {
     			e.printStackTrace();
