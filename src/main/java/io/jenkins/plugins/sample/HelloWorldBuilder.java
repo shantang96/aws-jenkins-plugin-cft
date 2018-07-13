@@ -92,8 +92,27 @@ public class HelloWorldBuilder extends Builder implements SimpleBuildStep {
             listener.getLogger().println("Stack Name = " + stackName);
             listener.getLogger().println("Parameters = " + parametersPairs);
             listener.getLogger().println("Key Value Pairs = " + keyValuePairs);
-			String executeStrX = "aws cloudformation deploy --template-file " + CFTFilePath +  " --stack-name " + stackName + " --parameter-overrides " + parametersPairs + " --tags " + keyValuePairs + " --no-execute-changeset";
-
+            String executeStrX = "";
+            if(!parametersPairs.isEmpty() && !keyValuePairs.isEmpty())
+            {
+			 	executeStrX = "aws cloudformation deploy --template-file " + CFTFilePath +  " --stack-name " + stackName + " --parameter-overrides " + parametersPairs + " --tags " + keyValuePairs + " --no-execute-changeset";
+			}
+			
+			if(parametersPairs.isEmpty() && keyValuePairs.isEmpty())
+			{
+				executeStrX = "aws cloudformation deploy --template-file " + CFTFilePath +  " --stack-name " + stackName + " --no-execute-changeset";
+			}
+			
+			if(parametersPairs.isEmpty() && !keyValuePairs.isEmpty())
+			{
+				executeStrX = "aws cloudformation deploy --template-file " + CFTFilePath +  " --stack-name " + stackName + " --tags " + keyValuePairs + " --no-execute-changeset";
+			}
+			if(!parametersPairs.isEmpty() && keyValuePairs.isEmpty())
+            {
+			 	executeStrX = "aws cloudformation deploy --template-file " + CFTFilePath +  " --stack-name " + stackName + " --parameter-overrides " + parametersPairs + " --no-execute-changeset";
+			}
+			
+			
 			listener.getLogger().println("");
 			listener.getLogger().println("Executing Command  = " + executeStrX);
 

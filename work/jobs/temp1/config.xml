@@ -14,9 +14,9 @@
   <builders>
     <io.jenkins.plugins.sample.HelloWorldBuilder plugin="latest-cft-demo@1.0-SNAPSHOT">
       <name>Shantanu Gupta</name>
-      <cloudformationtemplate>/Users/ShantanuGupta/Downloads/tomcat-new/webapps/plugins/latest-cft-demo/CFTtemplate.json</cloudformationtemplate>
-      <stackname>shantangStack3</stackname>
-      <parameters>KeyName=/Users/ShantanuGupta/Desktop/shantangKey.pem</parameters>
+      <cloudformationtemplate>/Users/ShantanuGupta/Downloads/tomcat-new/webapps/plugins/latest-cft-demo/S3-simple-public-bucket-template</cloudformationtemplate>
+      <stackname>shantangStack84</stackname>
+      <parameters></parameters>
       <keyvaluepairs>id=1234 group=dev user=shantang email=shantang@usc.edu</keyvaluepairs>
       <useFrench>false</useFrench>
     </io.jenkins.plugins.sample.HelloWorldBuilder>
