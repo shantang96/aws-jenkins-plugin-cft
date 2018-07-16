@@ -1,11 +1,19 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
   AWS CloudFormation Sample Template Simple Public Access Bucket
+
+Parameters:
+  BucketName:
+    Type: String
+
 Resources:
   S3Bucket:
     Type: 'AWS::S3::Bucket'
     Properties:
       AccessControl: PublicRead
+      BucketName:
+        Ref: BucketName
+
 Outputs:
   WebsiteURL:
     Value: !GetAtt 
